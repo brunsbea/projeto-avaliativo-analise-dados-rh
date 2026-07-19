@@ -226,9 +226,3 @@ Como evolução deste projeto, podem ser implementadas novas análises, como:
 # 🔗 Repositório
 
 https://github.com/brunsbea/projeto-avaliativo-analise-dados-rh
-
----
-
-# 🎥 Vídeo de apresentação
-
-**Link:** *(adicionar após a gravação do vídeo).*
