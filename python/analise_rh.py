@@ -103,6 +103,17 @@ print("\n===== Média salarial por região =====\n")
 print(media_regiao)
 
 # ============================================
+# Análise 5 - Estatísticas dos salários
+# ============================================
+
+print("\n===== Estatísticas dos salários =====")
+
+print(f"Média: {query1['SALARY'].mean():.2f}")
+print(f"Mediana: {query1['SALARY'].median():.2f}")
+print(f"Mínimo: {query1['SALARY'].min():.2f}")
+print(f"Máximo: {query1['SALARY'].max():.2f}")
+
+# ============================================
 # Gráfico 1 - Salário médio por departamento
 # ============================================
 
@@ -152,6 +163,21 @@ plt.xlabel("Região")
 plt.ylabel("Salário médio")
 
 plt.xticks(rotation=0)
+
+plt.tight_layout()
+plt.show()
+
+# ==========================================
+# Gráfico 4 - Histograma dos salários
+# ==========================================
+
+plt.figure(figsize=(8,5))
+
+plt.hist(query1["SALARY"], bins=10, edgecolor="black")
+
+plt.title("Distribuição dos salários")
+plt.xlabel("Salário")
+plt.ylabel("Quantidade de funcionários")
 
 plt.tight_layout()
 plt.show()

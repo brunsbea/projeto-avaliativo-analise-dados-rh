@@ -17,6 +17,7 @@ LEFT JOIN HR.COUNTRIES c
        ON l.country_id = c.country_id
 LEFT JOIN HR.REGIONS r
        ON c.region_id = r.region_id
+WHERE e.department_id IS NOT NULL       
 ORDER BY
     r.region_name,
     c.country_name,
